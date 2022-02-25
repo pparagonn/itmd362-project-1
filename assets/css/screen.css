@@ -56,3 +56,16 @@ button {
   grid-row: 1;
   grid-column: 3;
 }
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 67.5em) {
+  /* Content Style */
+  main {
+    padding-left: 20%;
+    padding-right: 20%;
+  }

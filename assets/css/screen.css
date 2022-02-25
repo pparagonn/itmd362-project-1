@@ -29,6 +29,30 @@ h1 {
 
 li,
 ol,
-ul {
+ul,
+button {
   padding: 0.267em; /* 4.277 / 16 = 0.267 */
+}
+
+.cart {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 3;
+  grid-gap: 1.125em; /* 18 / 16 = 1.125 */
+  gap: 1.125em; /* 18 / 16 = 1.125 */
+}
+
+#item-list {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#quantity-list {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#total-list {
+  grid-row: 1;
+  grid-column: 3;
 }

@@ -9,44 +9,93 @@
   <body>
     <h1>Cart</h1>
     <main class="cart">
-      <ol id="picture-list" class="cart-item">
-        <li>
-          <figure id="banana">
-          <img src="assets/img/banana.jpg" alt="Stock image of banana"/>
-          </figure>
-        </li>
-        <li>
-          <figure id="avacado">
-          <img src="assets/img/avacado.jpg" alt="Stock image of avacado"/>
-          </figure>
-        </li>
-        <li>
-          <figure id="strawberry">
-          <img src="assets/img/strawberry.jpg" alt="Stock image of strawberry"/>
-          </figure>
-        </li>
-      </ol>
-      <ol id="item-list" class="cart-item">
-        <li>Banana</li>
-        <li>Avacado</li>
-        <li>Strawberry</li>
-        <li>Taxes:</li>
-        <li>Shipping:</li>
-        <li>Total:</li>
-      </ol>
-      <ol id="quantity-list" class="cart-item">
-        <li>#</li>
-        <li>#</li>
-        <li>#</li>
-      </ol>
-      <ol id="total-list" class="cart-item">
-        <li>$</li>
-        <li>$</li>
-        <li>$</li>
-        <li>$</li>
-        <li>$</li>
-        <li>$</li>
-      </ol>
+
+      <table class="cart-table">
+        <tr>
+          <th></th>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>
+            <img src="assets/img/banana.jpg" alt="Stock image of banana"/>
+          </td>
+          <td>Banana</td>
+          <td>1 Bunch</td>
+          <td>$1.50</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="assets/img/avacado.jpg" alt="Stock image of banana"/>
+          </td>
+          <td>Avacado</td>
+          <td>8 per Bag</td>
+          <td>$4.00</td>
+        </tr>
+        <tr>
+          <td>
+          <img src="assets/img/strawberry.jpg" alt="Stock image of banana"/>
+          </td>
+          <td>Strawberry</td>
+          <td>1 Box</td>
+          <td>$1.99</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>Subtotal:</td>
+          <td>$7.49</td>
+        </tr>
+        <tr>
+          <td>Taxes:</td>
+          <td>$0.47</td>
+        </tr>
+        <tr>
+          <td>Total:</td>
+          <td>$7.96</td>
+        </tr>
+      </table>
+<!--
+<ol id="picture-list" class="cart-item">
+  <li>
+    <figure id="banana" class="fruit-image">
+    <img src="assets/img/banana.jpg" alt="Stock image of banana"/>
+    </figure>
+  </li>
+  <li>
+    <figure id="avacado" class="fruit-image">
+    <img src="assets/img/avacado.jpg" alt="Stock image of avacado"/>
+    </figure>
+  </li>
+  <li>
+    <figure id="strawberry" class="fruit-image">
+    <img src="assets/img/strawberry.jpg" alt="Stock image of strawberry"/>
+    </figure>
+  </li>
+</ol>
+<ol id="item-list" class="cart-item">
+  <li>Banana</li>
+  <li>Avacado</li>
+  <li>Strawberry</li>
+  <li>Taxes:</li>
+  <li>Shipping:</li>
+  <li>Total:</li>
+</ol>
+<ol id="quantity-list" class="cart-item">
+  <li>#</li>
+  <li>#</li>
+  <li>#</li>
+</ol>
+<ol id="total-list" class="cart-item">
+  <li>$</li>
+  <li>$</li>
+  <li>$</li>
+  <li>$</li>
+  <li>$</li>
+  <li>$</li>
+</ol>
+-->
       <a href="shipping-delivery/">
         <button type="Checkout">Checkout</button>
       </a>

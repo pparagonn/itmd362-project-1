@@ -44,25 +44,25 @@ ul {
 .cart {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 2fr;
   grid-gap: 1.125em; /* 18 / 16 = 1.125 */
   gap: 2.665em; /* 42.635 / 16 = 2.665 */
 }
 
-table {
-  border: 1px solid;
+#picture-list {
+  grid-column: 1;
 }
 
-th,
-td {
-  padding: 0.844em; /* 13.503 / 16 = 0.844 */
-  vertical-align: middle;
-  text-align: left;
+#item-list {
+  grid-column: 2;
 }
 
-td img {
-  max-width: 100%; /* 42.635 / 16 = 2.665 */
-  max-height: auto;
+#quantity-list {
+  grid-column: 3;
+}
+
+#total-list {
+  grid-column: 4;
 }
 
 .image {
@@ -71,7 +71,7 @@ td img {
 .fruit-image img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: grid;
 }
 
 main {
@@ -86,4 +86,8 @@ main {
     padding-left: 20%;
     padding-right: 20%;
   }
+}
+
+@media screen and (min-width: 760px) {
+
 }

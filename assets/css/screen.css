@@ -34,11 +34,15 @@ button {
   padding: 0.267em; /* 4.277 / 16 = 0.267 */
 }
 
-li,
-ol,
-ul {
-  padding-top: 1.5em; /* 23.994 / 16 = 1.5 */
-  padding-bottom: 1.5em; /* 23.994 / 16 = 1.5 */
+#item-list li,
+#quantity-list li,
+#total-list li {
+  padding-top: 1.125em; /* 18 / 16 = 1.125 */
+  padding-bottom: 1.125em; /* 18 / 16 = 1.125 */
+}
+#picture-list figure {
+  float: left;
+  padding: 0.267em; /* 4.277 / 16 = 0.267 */
 }
 
 .cart {
@@ -46,30 +50,51 @@ ul {
   grid-template-rows: auto;
   grid-template-columns: 1fr 3fr 3fr 2fr;
   grid-gap: 1.125em; /* 18 / 16 = 1.125 */
-  gap: 2.665em; /* 42.635 / 16 = 2.665 */
+  gap:
 }
 
 #picture-list {
   grid-column: 1;
+  grid-row: 1;
 }
 
 #item-list {
   grid-column: 2;
+  grid-row: 1;
 }
 
 #quantity-list {
   grid-column: 3;
+  grid-row: 1;
 }
 
 #total-list {
   grid-column: 4;
+  grid-row: 1;
 }
 
+#additional-list {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#total-additional-list {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+#checkout-button-id {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 3;
+}
 .fruit-image img {
   max-width: 100%;
   height: auto;
   display: grid;
 }
+
+
 
 main {
   padding-left: 10%;

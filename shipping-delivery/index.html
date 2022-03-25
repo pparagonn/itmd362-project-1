@@ -14,7 +14,7 @@
             <ol>
               <li>
                 <label for="shippingtypes">Shipping Options</label>
-                <select id="shippingtypes">
+                <select id="shippingtypes" required/>
                   <option value="option-1">1-Hour Delivery ($10)</option>
                   <option value="option-2">3-Hour Delivery ($5)</option>
                   <option value="option-3">3-5 Hour Delivery (FREE)</option>
@@ -27,15 +27,15 @@
             <ol class="ordered-list-form">
               <li>
                 <label for="first-name">First Name</label>
-                <input type="first-name" name="first-name">
+                <input type="first-name" name="first-name" required/>
               </li>
               <li>
                 <label for="last-name">Last Name</label>
-                <input type="last-name" name="last-name">
+                <input type="last-name" name="last-name" required/>
               </li>
               <li>
                 <label for="address">Address</label>
-                <input type="address" name="address">
+                <input type="address" name="address" required/>
               </li>
               <li>
                 <label for="address-2">Apartment, Suite, P.O. Box</label>
@@ -43,11 +43,11 @@
               </li>
               <li>
                 <label for="city">City</label>
-                <input type="city" name="city">
+                <input type="city" name="city" required/>
               </li>
               <li>
                 <label for="state">State</label>
-                <select id="state">
+                <select id="state" required>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -103,15 +103,15 @@
               </li>
               <li>
                 <label for="zip-code">Zip Code</label>
-                <input type="zip-code" name="zip-code">
+                <input type="zip-code" name="zip-code" required/>
               </li>
               <li>
                 <label for="email">Email</label>
-                <input type="email" name="email">
+                <input type="email" name="email" />
               </li>
               <li>
                 <label for="phone">Phone</label>
-                <input type="tel" name="phone">
+                <input type="tel" name="phone" />
               </li>
             </ol>
             <input class="next-step" type="submit" value="Continue to Payment">

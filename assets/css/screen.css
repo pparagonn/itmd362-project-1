@@ -35,23 +35,9 @@ button {
   padding: 0.267em; /* 4.277 / 16 = 0.267 */
 }
 
-button {
-   margin-top: 0.267em;
-   padding:  1.125em;
-   background-color: #FE9000;
-   border: none;
-   color: #F9F5FF;
-   border-radius: 0;
-   width: 100%;
-}
-
 main  {
   padding-left: 10%;
   padding-right: 10%;
-}
-
-button {
-  border-radius: 3.552em; /* 56.832px / 16px = 3.552em */
 }
 
 /* Cart Styling*/
@@ -125,6 +111,21 @@ input[type="tel"] {
 
 input[name="zip-code"] {
   width: 5.5em; /* 88px / 16px = 4em */
+}
+
+.ordered-list-form li {
+  display: grid;
+  justify-content: start;
+}
+
+.next-step {
+  margin-top: 0.267em;
+  padding:  1.125em;
+  background-color: #FE9000;
+  border: none;
+  color: #F9F5FF;
+  border-radius: 3.552em; /* 56.832px / 16px = 3.552em */
+  width: 100%;
 }
 
 /* Media Queries */

@@ -35,12 +35,17 @@ button {
   padding: 0.267em; /* 4.277 / 16 = 0.267 */
 }
 
-main  {
+main {
   padding-left: 10%;
   padding-right: 10%;
 }
 
 /* Cart Styling*/
+.ordered-list-form li {
+  display: grid;
+  justify-content: start;
+}
+
 #item-list li,
 #quantity-list li,
 #total-list li {
@@ -117,14 +122,9 @@ input[name="cvv"] {
   width: 2.25em; /* 36px / 16px */
 }
 
-.ordered-list-form li {
-  display: grid;
-  justify-content: start;
-}
-
 .next-step {
   margin-top: 0.267em;
-  padding:  1.125em;
+  padding: 1.125em;
   background-color: #FE9000;
   border: none;
   color: #F9F5FF;
@@ -135,7 +135,7 @@ input[name="cvv"] {
 .back-step {
   margin-top: 1.125em;
   margin-bottom: 1.125em;
-  padding:  0.844em;
+  padding: 0.844em;
   background-color: #FFC685;
   border: none;
   color: #F9F5FF;
@@ -155,7 +155,7 @@ input[name="cvv"] {
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 48.75em) {
   #checkout-button-id {
     grid-column-start: 2;
     grid-column-end: 4;

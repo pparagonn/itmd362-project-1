@@ -13,6 +13,31 @@ if(html.id === 'shipping-delivery-page') {
   shippingDelivery.addEventListener('submit', handleFormSubmission);
 }
 
+// Payment-Billing Form
+if(html.id === 'payment-billing-page') {
+  var paymentBilling = document.querySelector('form[name="payment-billing"]');
+  restoreFormDataFromLocalStorage(paymentBilling.name);
+  paymentBilling.addEventListener('input', debounce(handleFormInputActivity, 300));
+  paymentBilling.addEventListener('change', handleFormInputActivity);
+  paymentBilling.addEventListener('submit', handleFormSubmission);
+
+  var newAddressSection = document.querySelector('fieldset[name="shipping-delivery-section"]');
+  var newAddressMark = document.querySelector('#sameaddr');
+
+  newAddressSection.setAttribute('disabled', 'disabled');
+  newAddressSection.setAttribute('aria-hidden', 'true');
+
+  newAddressMark.addEventListener('change', function(event) {
+    if(event.target.checked) {
+      newAddressSection.setAttribute('disabled', 'disabled');
+      newAddressSection.setAttribute('aria-hidden', 'true');
+    } else {
+      newAddressSection.removeAttribute('disabled');
+      newAddressSection.setAttribute('aria-hidden', 'false');
+    }
+  });
+}
+
 /* Callback Functions */
 
 function handleFormInputActivity(event) {

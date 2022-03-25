@@ -8,34 +8,34 @@
   </head>
   <body>
     <main>
-      <form name="payment-billing" action="../summary/" class="shipping-deliver-form" method="POST" aria-labelledby="form-label" aria-live="polite" aria-relevant="additions">
+      <form name="payment-billing" action="../summary/" method="get" class="shipping-deliver-form" aria-labelledby="form-label" aria-live="polite" aria-relevant="additions">
         <h1>Payment</h1>
         <fieldset class="payment-billing-section" id="payment-selection">
           <ol class="ordered-list-form">
             <li>
               <label for="card-Number">Credit Card number</label>
-              <input type="text" id="card-number" name="card-number" required/>
+              <input type="text" name="card-number" required/>
             </li>
             <li>
               <label for="card-name">Name on Card</label>
-              <input type="text" id="card-name" name="card-name" required/>
+              <input type="text" name="card-name" required/>
             </li>
             <li>
               <label for="exp-date">Expiration Date</label>
-              <input type="month" name="card-expires" id="card-expires" placeholder="mm/yyyy" required/>
+              <input type="month" name="exp-date" placeholder="mm/yyyy" required/>
             </li>
             <li>
               <label for="cvv">CVV</label>
-              <input type="number" id="cvv" name="cvv" required/>
+              <input type="number" name="cvv" required/>
             </li>
             <li>
               <label for="sameaddr">Shipping Address Same as Billing</label>
-              <input type="checkbox" id="sameaddr" checked="checked" />
+              <input type="checkbox" name="sameaddr" checked="checked" checked />
             </li>
           </ol>
         </fieldset>
         <h1>Billing Address</h1>
-        <fieldset class="payment-billing-section" id="billing-selection">
+        <fieldset name="payment-billing-section" id="billing-selection">
           <ol class="ordered-list-form">
             <li>
               <label for="first-name">First Name</label>
@@ -130,7 +130,7 @@
         </fieldset>
       </form>
       <a href="../shipping-delivery/">
-        <button class="back-step" type="submit">Back to Shipping & Delivery</button>
+        <button id="SPNext" class="back-step" type="submit">Back to Shipping & Delivery</button>
       </a>
     </main>
     <script src="../assets/js/site.js"></script>

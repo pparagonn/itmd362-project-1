@@ -135,7 +135,7 @@ input[name="zip-code"] {
   background-color: #FFC685;
   border: none;
   color: #F9F5FF;
-  border-radius: 3.552em; /* 56.832px / 16px = 3.552em */
+  border-radius: 1.125em; /* 56.832px / 16px = 3.552em */
   width: 100%;
 }
 

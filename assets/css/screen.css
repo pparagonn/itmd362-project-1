@@ -40,6 +40,7 @@ button {
   padding-top: 1.125em; /* 18 / 16 = 1.125 */
   padding-bottom: 1.125em; /* 18 / 16 = 1.125 */
 }
+
 #picture-list figure {
   float: left;
   padding: 0.267em; /* 4.277 / 16 = 0.267 */
@@ -56,6 +57,7 @@ button {
 #picture-list {
   grid-column: 1;
   grid-row: 1;
+  display: none;
 }
 
 #item-list {
@@ -84,8 +86,8 @@ button {
 }
 
 #checkout-button-id {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
   grid-row: 3;
 }
 .fruit-image img {
@@ -94,6 +96,15 @@ button {
   display: grid;
 }
 
+button{
+   margin-top: 0.267em;
+   padding:  1.125em;
+   background-color: #FE9000;
+   border: none;
+   color: #F9F5FF;
+   border-radius: 0;
+   width: 100%;
+}
 
 
 main {
@@ -108,8 +119,15 @@ main {
     padding-left: 20%;
     padding-right: 20%;
   }
+  #picture-list {
+    display: table-cell;
+  }
 }
 
 @media screen and (min-width: 760px) {
-
+  #checkout-button-id {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 3;
+  }
 }

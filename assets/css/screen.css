@@ -35,6 +35,26 @@ button {
   padding: 0.267em; /* 4.277 / 16 = 0.267 */
 }
 
+button {
+   margin-top: 0.267em;
+   padding:  1.125em;
+   background-color: #FE9000;
+   border: none;
+   color: #F9F5FF;
+   border-radius: 0;
+   width: 100%;
+}
+
+main  {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+button {
+  border-radius: 3.552em; /* 56.832px / 16px = 3.552em */
+}
+
+/* Cart Styling*/
 #item-list li,
 #quantity-list li,
 #total-list li {
@@ -97,19 +117,14 @@ button {
   display: grid;
 }
 
-button {
-   margin-top: 0.267em;
-   padding:  1.125em;
-   background-color: #FE9000;
-   border: none;
-   color: #F9F5FF;
-   border-radius: 0;
-   width: 100%;
+/* Form Styles */
+
+input[type="tel"] {
+  width: 8.413em; /* 134.612px / 16px =  8.413em */
 }
 
-main  {
-  padding-left: 10%;
-  padding-right: 10%;
+input[name="zip-code"] {
+  width: 5.5em; /* 88px / 16px = 4em */
 }
 
 /* Media Queries */

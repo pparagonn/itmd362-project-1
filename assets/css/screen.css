@@ -113,6 +113,10 @@ input[name="zip-code"] {
   width: 5.5em; /* 88px / 16px = 4em */
 }
 
+input[name="cvv"] {
+  width: 2.25em; /* 36px / 16px */
+}
+
 .ordered-list-form li {
   display: grid;
   justify-content: start;

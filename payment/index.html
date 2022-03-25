@@ -8,7 +8,7 @@
   </head>
   <body>
     <main>
-      <form name="payment-billing" action="../summary/" class="shipping-deliver-form" method="get" aria-labelledby="form-label" aria-live="polite" aria-relevant="additions">
+      <form name="payment-billing" action="../summary/" class="shipping-deliver-form" method="POST" aria-labelledby="form-label" aria-live="polite" aria-relevant="additions">
         <h1>Payment</h1>
         <fieldset class="payment-billing-section" id="payment-selection">
           <ol class="ordered-list-form">
@@ -21,12 +21,12 @@
               <input type="text" id="card-name" name="card-name"/>
             </li>
             <li>
-              <label for="exp-date">Exp Date</label>
-              <input type="text" id="exp-date" name="exp-date"/>
+              <label for="exp-date">Expiration Date</label>
+              <input type="month" name="card-expires" id="card-expires" placeholder="mm/yyyy"/>
             </li>
             <li>
-              <label for="ccv">CCV</label>
-              <input type="number" id="ccv" name="ccv"/>
+              <label for="cvv">CVV</label>
+              <input type="number" id="cvv" name="cvv"/>
             </li>
             <li>
               <label for="sameaddr">Shipping Address Same as Billing</label>
@@ -129,9 +129,10 @@
           <input class="next-step" type="submit" value="PLACE ORDER">
         </fieldset>
       </form>
-      <a href="../">
-        <button class="back-step" type="submit">Back to Cart</button>
+      <a href="../shipping-delivery/">
+        <button class="back-step" type="submit">Back to Shipping & Delivery</button>
       </a>
     </main>
+    <script src="../assets/js/site.js"></script>
   </body>
 </html>

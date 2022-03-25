@@ -23,7 +23,8 @@ html {
 
 h1 {
   font-size: 1.5em; /* 23.994 / 16 = 1.5 */
-  padding: 0.844em; /* 13.503 / 16 = 0.844 */
+  padding-top: 0.844em; /* 13.503 / 16 = 0.844 */
+  padding-bottom: 0.844em; /* 13.503 / 16 = 0.844 */
   font-weight: bold;
 }
 
@@ -96,7 +97,7 @@ button {
   display: grid;
 }
 
-button{
+button {
    margin-top: 0.267em;
    padding:  1.125em;
    background-color: #FE9000;
@@ -106,8 +107,7 @@ button{
    width: 100%;
 }
 
-
-main {
+main  {
   padding-left: 10%;
   padding-right: 10%;
 }

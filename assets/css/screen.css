@@ -128,6 +128,17 @@ input[name="zip-code"] {
   width: 100%;
 }
 
+.back-step {
+  margin-top: 1.125em;
+  margin-bottom: 1.125em;
+  padding:  0.844em;
+  background-color: #FFC685;
+  border: none;
+  color: #F9F5FF;
+  border-radius: 3.552em; /* 56.832px / 16px = 3.552em */
+  width: 100%;
+}
+
 /* Media Queries */
 @media screen and (min-width: 67.5em) {
   /* Content Style */

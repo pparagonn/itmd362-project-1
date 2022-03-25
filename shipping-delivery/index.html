@@ -4,17 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link rel="stylesheet" media="screen" href="../assets/css/screen.css" />
-    <title>Shipping & Delivery</title>
+    <title>Shipping and Delivery</title>
   </head>
   <body>
     <main>
-        <form name="shipping-delivery" id="shipping-selection" action="../payment/" class="shipping-deliver-form" method="get" aria-labelledby="form-label" aria-live="polite" aria-relevant="additions">
+        <form name="shipping-delivery" action="../payment/"
+        class="shipping-deliver-form" method="get" aria-labelledby="form-label" aria-live="polite"
+        aria-relevant="additions">
           <h1>Shipping</h1>
           <fieldset class="shipping-delivery-section" id="shipping-selection">
             <ol>
               <li>
                 <label for="shippingtypes">Shipping Options</label>
-                <select name="shippingtypes" required/>
+                <select name="shippingtypes" id="shippingtypes" required/>
                   <option value="option-1">1-Hour Delivery ($10)</option>
                   <option value="option-2">3-Hour Delivery ($5)</option>
                   <option value="option-3">3-5 Hour Delivery (FREE)</option>
@@ -27,23 +29,23 @@
             <ol class="ordered-list-form">
               <li>
                 <label for="first-name">First Name</label>
-                <input type="first-name" name="first-name" required/>
+                <input type="first-name" id="first-name" name="first-name" required />
               </li>
               <li>
                 <label for="last-name">Last Name</label>
-                <input type="last-name" name="last-name" required/>
+                <input type="last-name" id="last-name" name="last-name" required />
               </li>
               <li>
                 <label for="address">Address</label>
-                <input type="address" name="address" required/>
+                <input type="address" id="address" name="address" required />
               </li>
               <li>
                 <label for="address-2">Apartment, Suite, P.O. Box</label>
-                <input type="address-2" name="address-2">
+                <input type="address-2" id="address-2" name="address-2" />
               </li>
               <li>
                 <label for="city">City</label>
-                <input type="city" name="city" required/>
+                <input type="city" id="city" name="city" required/>
               </li>
               <li>
                 <label for="state">State</label>
@@ -103,18 +105,18 @@
               </li>
               <li>
                 <label for="zip-code">Zip Code</label>
-                <input type="zip-code" name="zip-code" required/>
+                <input type="zip-code" id="zip-code" name="zip-code" required/>
               </li>
               <li>
                 <label for="email">Email</label>
-                <input type="email" name="email" />
+                <input type="email" id="email" name="email" />
               </li>
               <li>
                 <label for="phone">Phone</label>
-                <input type="tel" name="phone" />
+                <input type="tel" id="phone" name="phone" />
               </li>
             </ol>
-            <input id="SPNext" class="next-step" type="submit" value="Continue to Payment">
+            <input id="sp-next" class="next-step" type="submit" value="Continue to Payment" />
           </fieldset>
         </form>
         <a href="../">

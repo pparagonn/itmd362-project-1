@@ -8,29 +8,30 @@
   </head>
   <body>
     <main>
-      <form name="payment-billing" action="../summary/" method="get" class="shipping-deliver-form" aria-labelledby="form-label" aria-live="polite" aria-relevant="additions">
+      <form name="payment-billing" action="../summary/" method="get" class="shipping-deliver-form"
+      aria-labelledby="form-label" aria-live="polite" aria-relevant="additions">
         <h1>Payment</h1>
         <fieldset class="payment-billing-section" id="payment-selection">
           <ol class="ordered-list-form">
             <li>
-              <label for="card-Number">Credit Card number</label>
-              <input type="text" name="card-number" required/>
+              <label for="card-number">Credit Card number</label>
+              <input type="text" id="card-number" name="card-number" required/>
             </li>
             <li>
               <label for="card-name">Name on Card</label>
-              <input type="text" name="card-name" required/>
+              <input type="text" id="card-name" name="card-name" required/>
             </li>
             <li>
               <label for="exp-date">Expiration Date</label>
-              <input type="month" name="exp-date" placeholder="mm/yyyy" required/>
+              <input type="month" id="exp-date" name="exp-date" placeholder="mm/yyyy" required/>
             </li>
             <li>
               <label for="cvv">CVV</label>
-              <input type="number" name="cvv" required/>
+              <input type="number" id="cvv" name="cvv" required/>
             </li>
             <li>
               <label for="sameaddr">Shipping Address Same as Billing</label>
-              <input type="checkbox" name="sameaddr" checked="checked" checked />
+              <input type="checkbox" id="sameaddr" name="sameaddr" checked="checked" checked />
             </li>
           </ol>
         </fieldset>
@@ -39,23 +40,23 @@
           <ol class="ordered-list-form">
             <li>
               <label for="first-name">First Name</label>
-              <input type="first-name" name="first-name" />
+              <input type="first-name" id="first-name" name="first-name" />
             </li>
             <li>
               <label for="last-name">Last Name</label>
-              <input type="last-name" name="last-name" />
+              <input type="last-name" id="last-name" name="last-name" />
             </li>
             <li>
               <label for="address">Address</label>
-              <input type="address" name="address" />
+              <input type="address" id="address" name="address" />
             </li>
             <li>
               <label for="address-2">Apartment, Suite, P.O. Box</label>
-              <input type="address-2" name="address-2" />
+              <input type="address-2" id="address-2" name="address-2" />
             </li>
             <li>
               <label for="city">City</label>
-              <input type="city" name="city" />
+              <input type="city" id="city" name="city" />
             </li>
             <li>
               <label for="state">State</label>
@@ -115,22 +116,22 @@
             </li>
             <li>
               <label for="zip-code">Zip Code</label>
-              <input type="zip-code" name="zip-code" />
+              <input type="zip-code" id="zip-code" name="zip-code" />
             </li>
             <li>
               <label for="email">Email</label>
-              <input type="email" name="email" />
+              <input type="email" id="email" name="email" />
             </li>
             <li>
               <label for="phone">Phone</label>
-              <input type="tel" name="phone" />
+              <input type="tel" id="phone" name="phone" />
             </li>
           </ol>
-          <input class="next-step" type="submit" value="PLACE ORDER">
+          <input class="next-step" type="submit" value="PLACE ORDER" />
         </fieldset>
       </form>
       <a href="../shipping-delivery/">
-        <button id="SPNext" class="back-step" type="submit">Back to Shipping & Delivery</button>
+        <button id="sp-next" class="back-step" type="submit">Back to Shipping and Delivery</button>
       </a>
     </main>
     <script src="../assets/js/site.js"></script>

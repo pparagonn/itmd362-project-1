@@ -11,6 +11,11 @@
       "width": 1024,
       "height": 768
     }
+    {
+      "label": "monitor",
+      "width": 1080,
+      "height": 1920
+    }
   ],
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",

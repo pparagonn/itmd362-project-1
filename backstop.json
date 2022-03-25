@@ -16,9 +16,9 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "BackstopJS Homepage",
+      "label": "Project 1 Form Page",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "https://garris.github.io/BackstopJS/",
+      "url": "https://pparagonn.github.io/itmd362-project-1/",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
